@@ -1,0 +1,31 @@
+---
+title: "Unity MoCap"
+author: "Cathy Macpherson"
+date: "13/04/2020"
+output: html_document
+---
+
+Load in relevant packages:
+```{r}
+library(tidyverse)#for data manipulation
+library(circular) #used for circular plots and circular statistics (ANOVA)
+library(data.table)#for selecting certain rows to examine
+library(ggplot2)#for plots
+```
+
+Reads in data to R:
+```{r}
+#reads in csv file
+data <- read_csv("C://Users//22824459//OneDrive - research.uwa.edu.au//Unity//Projects//PI TEST Project//test2.txt", col_names = F) 
+```
+
+Select rows:
+```{r}
+data <- as.data.table(data) #make data into data table
+data <- data[65000:.N] #select rows from x to end
+```
+
+```{r}
+ggplot(data=data, aes(x=X1, y = X12)) +
+  geom_line()
+```
