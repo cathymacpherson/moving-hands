@@ -705,7 +705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 88b28c9beeccaf44aafbbfa6886d3562, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 88b28c9beeccaf44aafbbfa6886d3562, type: 3}
       propertyPath: m_Name
@@ -1421,6 +1421,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 452fdb771bcc9494a84ee3ddb47cc6a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100038, guid: 452fdb771bcc9494a84ee3ddb47cc6a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 452fdb771bcc9494a84ee3ddb47cc6a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.8
@@ -1537,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c1455c0a1b6479946afbe414c8891b89, type: 2}
+    - target: {fileID: 100034, guid: 452fdb771bcc9494a84ee3ddb47cc6a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 452fdb771bcc9494a84ee3ddb47cc6a3, type: 3}
 --- !u!1 &987553267
@@ -1760,7 +1772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 9fe3536b7d8022a4da02043a8178fc16, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 9fe3536b7d8022a4da02043a8178fc16, type: 3}
       propertyPath: m_Name
@@ -2340,7 +2352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 88b28c9beeccaf44aafbbfa6886d3562, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 88b28c9beeccaf44aafbbfa6886d3562, type: 3}
       propertyPath: m_Name
@@ -3030,7 +3042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 9fe3536b7d8022a4da02043a8178fc16, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 9fe3536b7d8022a4da02043a8178fc16, type: 3}
       propertyPath: m_Name

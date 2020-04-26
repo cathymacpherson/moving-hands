@@ -51,7 +51,7 @@ void Start()
 
     void readCSV()
     {
-        TextAsset rotationData = Resources.Load<TextAsset>("low"); //loads in data
+        TextAsset rotationData = Resources.Load<TextAsset>("medium"); //loads in data
         data = rotationData.text.Split('\n'); //splits the data into array by row
     }
 
@@ -64,14 +64,14 @@ void runMovement()
         
         for (int i = 0; i < data.Length - 1; i++)
         {
-          //  rightStickLight.transform.eulerAngles = new Vector3(rightStickLight.transform.eulerAngles.x, rightStickLight.transform.eulerAngles.y, float.Parse(row[0])*20);
-          //  leftStickLight.transform.eulerAngles = new Vector3(leftStickLight.transform.eulerAngles.x, leftStickLight.transform.eulerAngles.y, 0 - float.Parse(row[1])*20); 
+            rightStickLight.transform.eulerAngles = new Vector3(rightStickLight.transform.eulerAngles.x, rightStickLight.transform.eulerAngles.y, float.Parse(row[0])*20);
+            leftStickLight.transform.eulerAngles = new Vector3(leftStickLight.transform.eulerAngles.x, leftStickLight.transform.eulerAngles.y, 0 - float.Parse(row[1])*20); 
 
-           // rightHandLight.transform.eulerAngles = new Vector3(rightHandLight.transform.eulerAngles.x, rightHandLight.transform.eulerAngles.y, 90 + float.Parse(row[0])*20);
+         //   rightHandLight.transform.eulerAngles = new Vector3(rightHandLight.transform.eulerAngles.x, rightHandLight.transform.eulerAngles.y, 90 + float.Parse(row[0])*20);
           //  leftHandLight.transform.eulerAngles = new Vector3(leftHandLight.transform.eulerAngles.x, leftHandLight.transform.eulerAngles.y, 270 + float.Parse(row[1])*20);
 
-            rightStickDark.transform.eulerAngles = new Vector3(rightStickDark.transform.eulerAngles.x, rightStickDark.transform.eulerAngles.y, float.Parse(row[0]) * 20);
-            leftStickDark.transform.eulerAngles = new Vector3(leftStickDark.transform.eulerAngles.x, leftStickDark.transform.eulerAngles.y, 0 - float.Parse(row[1]) * 20);
+          //  rightStickDark.transform.eulerAngles = new Vector3(rightStickDark.transform.eulerAngles.x, rightStickDark.transform.eulerAngles.y, float.Parse(row[0]) * 20);
+          //  leftStickDark.transform.eulerAngles = new Vector3(leftStickDark.transform.eulerAngles.x, leftStickDark.transform.eulerAngles.y, 0 - float.Parse(row[1]) * 20);
 
            // rightHandDark.transform.eulerAngles = new Vector3(rightHandDark.transform.eulerAngles.x, rightHandDark.transform.eulerAngles.y, 90 + float.Parse(row[0]) * 20);
           //  leftHandDark.transform.eulerAngles = new Vector3(leftHandDark.transform.eulerAngles.x, leftHandDark.transform.eulerAngles.y, 270 + float.Parse(row[1]) * 20); 
