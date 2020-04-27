@@ -51,7 +51,7 @@ void Start()
 
     void readCSV()
     {
-        TextAsset rotationData = Resources.Load<TextAsset>("high"); //loads in data
+        TextAsset rotationData = Resources.Load<TextAsset>("low"); //loads in data
         data = rotationData.text.Split('\n'); //splits the data into array by row
     }
 
@@ -64,8 +64,8 @@ void runMovement()
         
         for (int i = 0; i < data.Length - 1; i++)
         {
-            rightStickLight.transform.eulerAngles = new Vector3(rightStickLight.transform.eulerAngles.x, rightStickLight.transform.eulerAngles.y, float.Parse(row[1])*20);
-            leftStickLight.transform.eulerAngles = new Vector3(leftStickLight.transform.eulerAngles.x, leftStickLight.transform.eulerAngles.y, 0 - float.Parse(row[0])*20); 
+            rightStickLight.transform.eulerAngles = new Vector3(rightStickLight.transform.eulerAngles.x, rightStickLight.transform.eulerAngles.y, float.Parse(row[0])*20);
+            leftStickLight.transform.eulerAngles = new Vector3(leftStickLight.transform.eulerAngles.x, leftStickLight.transform.eulerAngles.y, 0 - float.Parse(row[1])*20); 
 
          //   rightHandLight.transform.eulerAngles = new Vector3(rightHandLight.transform.eulerAngles.x, rightHandLight.transform.eulerAngles.y, 90 + float.Parse(row[0])*20);
           //  leftHandLight.transform.eulerAngles = new Vector3(leftHandLight.transform.eulerAngles.x, leftHandLight.transform.eulerAngles.y, 270 + float.Parse(row[1])*20);
